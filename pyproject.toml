@@ -1,0 +1,7 @@
+[tool.vulture]
+min_confidence = 50
+# We must exclude config.py because there seems to be some magical other file it's finding instead of mine...
+exclude = ['config.py']
+paths = ["."]
+sort_by_size = true
+verbose = false
